@@ -2,9 +2,8 @@ import { useDispatch } from 'react-redux'
 import {AiFillDelete} from 'react-icons/ai'
 import { removeFromCart } from '../services/cartSlice';
 
-const Items = ({ product }) => {
+const Item = ({product}) => {
     const dispatch = useDispatch();
-
   return (
     <div className="card" style={{ width: "18rem" }}>
       <div className="card-body">
@@ -28,4 +27,4 @@ const Items = ({ product }) => {
   );
 };
 
-export default Items;
+export default Item;

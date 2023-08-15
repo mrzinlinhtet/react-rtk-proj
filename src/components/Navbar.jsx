@@ -5,7 +5,7 @@ import { AiFillHeart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const cart = useSelector((state) => state.cart);
+  const cart = useSelector((state) => state.cart.cart);
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
